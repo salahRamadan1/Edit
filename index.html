@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT PHOTO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class=" container mt-5 p-3">
+        <div class=" row align-items-center">
+            <div class="col-md-6 ">
+                <div class="imgItem">
+                    <img id="img"  class="w-100 rounded-3" alt="">
+                    <canvas id="canvas" class="w-100 rounded-3"></canvas>
+                </div>
+                <div class="  text-center">
+                    <label for="Upload" class="labelInput mt-3 ">Upload</label>
+                    <input type="file" class="UploadInput" id="Upload">
+                </div>
+            </div>
+            <!-- ******************* -->
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        <label for="Saturate" class="text-white py-2">Saturate</label>
+                        <input type="range" id="Saturate" class="w-100" min="0" max="200" value="100">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Contrast" class="text-white py-2">Contrast</label>
+                        <input type="range" id="Contrast" class="w-100"  min="0" max="200" value="100">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Brightness" class="text-white py-2">Brightness</label>
+                        <input type="range" id="Brightness" class="w-100"  min="0" max="200" value="100">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Sepia" class="text-white py-2">Sepia</label>
+                        <input type="range" id="Sepia" class="w-100"  min="0" max="200" value="0">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Grayscale" class="text-white py-2">Grayscale</label>
+                        <input type="range" id="Grayscale" class="w-100"  step="0.1" min="0" max="1" value="0">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Blur" class="text-white py-2">Blur</label>
+                        <input type="range" id="Blur" class="w-100" step="0.1" min="0" max="1" value="0">
+                    </li>
+                    <!--  -->
+                    <li>
+                        <label for="Hue-Rotate" class="text-white py-2">Hue Rotate</label>
+                        <input type="range" id="Hue-Rotate" class="w-100"  min="0" max="350" value="0">
+                    </li>
+                    <li>
+                        <div class=" mt-2 finish d-flex justify-content-around">
+                            <a download="true" class=" text-white" id="download">Download</a>
+                            <span onclick="resetValue()" id="reset" class=" text-white">Reset</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

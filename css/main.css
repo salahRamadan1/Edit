@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:  sans-serif;
+}
+body{
+    background-color: #333;
+
+}
+.container{
+    background-color: #222;
+    border-radius: 20px;
+}
+.UploadInput{
+    display: none;
+}
+.labelInput{
+    color: white;
+    border: 2px white dashed;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+ 
+ul{
+    direction: rtl;
+    
+}
+.finish a ,span {
+ text-decoration: none;
+ background-color: seagreen;
+ padding: 10px 15px;
+ cursor: pointer;
+ border-radius: 10px;
+}
